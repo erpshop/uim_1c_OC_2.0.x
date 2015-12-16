@@ -3,7 +3,7 @@ class ControllerExtensionExchange1c extends Controller {
 	private $error = array(); 
 	
 	public function install() {
-		mkdir(DIR_IMAGE."data/export", 0777);
+		mkdir(DIR_IMAGE."catalog/export", 0777);
 		
 		$this->db->query("ALTER TABLE `" . DB_PREFIX . "order`
 			ADD `is_new` int(11) NOT NULL DEFAULT '1';");
