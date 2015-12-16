@@ -8,8 +8,8 @@ require_once 'OneC/Wsdl/Client.php';
 
 class OneCGateway extends Controller{
 		
-	private $enable_logs = 1;
-	private $image_dir = 'catalog/demo/';
+	private $enable_logs = 0;
+	private $image_dir = 'catalog/export/';
 	
 	public $category_ids = array();
 	public $product_ids = array();
